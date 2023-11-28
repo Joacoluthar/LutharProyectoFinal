@@ -1,0 +1,20 @@
+.navbar {
+    background-color: rgb(247, 191, 119);
+    padding: 10px;
+    color: white;
+    
+  }
+  
+  .titulo {text-decoration: none;
+    margin: 0;
+    border: none;
+    color: aliceblue;
+    
+   
+  }
+  
+  .container-fluid {
+    display: flex;
+    justify-content: center;
+  }
+  

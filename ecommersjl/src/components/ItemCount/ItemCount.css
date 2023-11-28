@@ -1,0 +1,15 @@
+.Button{
+background: rgb(226, 240, 243) ;
+cursor: pointer;
+padding: 3px 20px;
+font-size: 20px;
+}
+.Number{
+    padding: 15px;
+}
+.Controls{
+display: flex;
+align-items: center;
+justify-content: center;
+   
+}
