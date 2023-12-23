@@ -1,11 +1,8 @@
-import { useContext, useState } from "react"
+import { useContext, useState } from "react";
 import { CartContext } from "../context/CartContext"
-import {doc, Timestamp, collection, writeBatch, getDocs, query, where, documentId, addDoc } from "firebase/firestore";
-import { db } from '../../services/firebaseConfig';
-
-import CheckoutForm from '../CheckoutForm/CheckoutForm'
-
-
+import { db } from "../../services/firebaseConfig"
+import CheckoutForm from "../CheckoutForm/CheckoutForm"
+import { Timestamp, collection, writeBatch, getDocs, query, where, documentId, addDoc } from "firebase/firestore";
 
 const Checkout = () => {
     const [loading, setLoading] = useState(false);
@@ -20,7 +17,7 @@ const Checkout = () => {
                     name, phone, email,
                 },
                 items: cart,
-                total: totalQuantity(),
+                total: totalQuantity,
                 date: Timestamp.fromDate(new Date()),
             };
 
@@ -78,4 +75,4 @@ const Checkout = () => {
     );
 }
 
-export default Checkout;
+export default Checkout;

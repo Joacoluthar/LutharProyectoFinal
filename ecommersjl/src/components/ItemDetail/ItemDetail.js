@@ -19,8 +19,7 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
         addItem(item,quantity)
     }
 
-    return (
-        <article className="CardItem">
+    return <div className='Articulo'>  <article className="CardItem">
             <header className="Header">
                 <h2 className="ItemHeader">
                     {name}
@@ -50,7 +49,8 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
 }
 </footer>
         </article>
-    );
+     
+    </div> 
 };
 
 export default ItemDetail

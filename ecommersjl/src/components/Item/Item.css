@@ -1,3 +1,4 @@
+
 .ItemImg{
     width: 250px;
     height: 170px;
@@ -13,10 +14,12 @@
 }
 .CardItem{
     padding: 10px;
-    width: 300px;
+    width: max-content;
     background-color: coral;
-    height: 320px;
+    height: max-content;
     margin: 15px;
+
+   
 }
 .Option{
     background-color: black;
@@ -28,4 +31,5 @@
     font-weight: bold;
     position: relative;
     border-radius: 12px;
+    text-decoration: none;
 }

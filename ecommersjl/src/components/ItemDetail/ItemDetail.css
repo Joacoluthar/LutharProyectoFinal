@@ -1,3 +1,8 @@
 .itemFooter{
     background-color: coral;
+    
+}
+.Articulo{
+    display: flex;
+    justify-content: space-around;
 }

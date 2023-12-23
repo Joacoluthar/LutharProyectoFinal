@@ -10,7 +10,7 @@ const CartWidget = () => {
   return (
     <Link to='/cart' className='CardWidget' style={{ display: totalQuantity.totalQuantity > 0 }}>
       <img className='CartImg' src={cart} alt="cart-widget" />
-      {totalQuantity.totalQuantity > 0 && <span>{totalQuantity.totalQuantity}</span>}
+      {totalQuantity.totalQuantity > 0 && <span className='Numerito'>{totalQuantity.totalQuantity}</span>}
 
     </Link>
   );

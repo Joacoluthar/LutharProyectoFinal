@@ -1,0 +1,17 @@
+.ProdCarrito{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #BFF75C;
+}
+.NombreP{
+    font-size: medium;
+}
+.CantidadP{
+    font-size: medium;
+   
+}
+.SubtotalP{
+    font-size: medium;
+   
+}
