@@ -1,17 +1,17 @@
-.Form{
+.Form {
     margin: 0 auto;
     width: 300px;
-    background-color: #DCFF78 ;
+    background-color: #DCFF78;
     padding: 10px;
     border-radius: 3px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.label{
+.label {
     display: flex;
-margin: 3px;
-padding: 10px;
-justify-content: space-around;
+    margin: 3px;
+    padding: 10px;
+    justify-content: space-around;
     align-items: center;
-    
+
 }

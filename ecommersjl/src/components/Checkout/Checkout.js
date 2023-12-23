@@ -7,7 +7,7 @@ import { Timestamp, collection, writeBatch, getDocs, query, where, documentId, a
 const Checkout = () => {
     const [loading, setLoading] = useState(false);
     const [orderId, setOrderId] = useState('');
-    const {cart, totalQuantity, clearCart} = useContext(CartContext);
+    const { cart, totalQuantity, clearCart } = useContext(CartContext);
 
     const createOrder = async ({ name, phone, email }) => {
         setLoading(true);
@@ -41,10 +41,10 @@ const Checkout = () => {
                 }
             });
 
-            if (outOfStock.length === 0){
+            if (outOfStock.length === 0) {
                 await batch.commit();
-                const orderRef = collection(db,'orders');
-                
+                const orderRef = collection(db, 'orders');
+
                 const orderAdded = await addDoc(orderRef, objOrder);
                 setOrderId(orderAdded.id);
                 clearCart();
@@ -70,9 +70,9 @@ const Checkout = () => {
     return (
         <div>
             <h1>Checkout</h1>
-            <CheckoutForm onConfirm={createOrder}/>
+            <CheckoutForm onConfirm={createOrder} />
         </div>
     );
 }
 
-export default Checkout;
+export default Checkout;

@@ -1,8 +1,9 @@
-.itemFooter{
+.itemFooter {
     background-color: coral;
-    
+
 }
-.Articulo{
+
+.Articulo {
     display: flex;
     justify-content: space-around;
 }

@@ -1,18 +1,20 @@
-.Button{
-background: rgb(226, 240, 243) ;
-cursor: pointer;
-padding: 3px 20px;
-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-size: 15px;
-border: 0;
-border-radius: 5px;
+.Button {
+    background: rgb(226, 240, 243);
+    cursor: pointer;
+    padding: 3px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    border: 0;
+    border-radius: 5px;
 }
-.Number{
+
+.Number {
     padding: 15px;
 }
-.Controls{
-display: flex;
-align-items: center;
-justify-content: center;
-   
+
+.Controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }

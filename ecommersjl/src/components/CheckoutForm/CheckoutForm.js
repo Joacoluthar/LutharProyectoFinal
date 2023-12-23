@@ -1,8 +1,8 @@
 import './CheckoutForm.css'
 import { useState } from 'react'
 
-const CheckoutForm = ({ onConfirm}) =>{
-    const[name,setName] = useState('')
+const CheckoutForm = ({ onConfirm }) => {
+    const [name, setName] = useState('')
     const [phone, setPhone] = useState('')
     const [email, setEmail] = useState('')
 
@@ -15,25 +15,25 @@ const CheckoutForm = ({ onConfirm}) =>{
         onConfirm(userData)
     }
 
-    return(
+    return (
         <div className='Container'>
             <form onSubmit={handleConfirm} className='Form'>
                 <label className='label'>
                     Nombre
-                    <input className='Input'type='text'value={name}onChange={({target})=> setName(target.value)} />
+                    <input className='Input' type='text' value={name} onChange={({ target }) => setName(target.value)} />
                 </label>
                 <label className='label'>
                     Telefono
-                    <input className='Input'type='text'value={phone}onChange={({target})=> setPhone(target.value)}/>
+                    <input className='Input' type='text' value={phone} onChange={({ target }) => setPhone(target.value)} />
                 </label>
                 <label className='label'>
                     Email
-                    <input className='Input'type='text'value={email}onChange={({target})=> setEmail(target.value)}/>
+                    <input className='Input' type='text' value={email} onChange={({ target }) => setEmail(target.value)} />
                 </label>
                 <div className='Label'>
                     <button type='submit' className='Button'>Crear Orden</button>
-                    </div>
-                    </form>
+                </div>
+            </form>
         </div>
     )
 }
